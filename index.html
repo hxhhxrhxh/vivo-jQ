@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vivo智能手机官方商城</title>
+    <link rel="shortcut icon" href="img/favicon_7c51b3b.ico">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_898187_3oltrwlxjpw.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+    <script src="js/swiper-4.3.5.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+    .son{
+        position: absolute;
+        top: 0;
+        left:215px;
+        width: 700px;
+        height: 100%;
+        background: #fff;
+        z-index: 3;
+        padding:25px 44px 0 44px;
+        display: none;
+    }
+    .son .son-title{
+        color: #333;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+    .son ul{
+        margin-top: 30px;
+    }
+    .son ul .son-li{
+        display: flex;
+        align-items: center;
+        margin:20px 0;
+    }
+    .son ul .son-li img{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .son ul .son-li p{
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .footer{
+        width: 100%;
+        height: 550px;
+        background: #fff;
+        /*margin: 90px auto 0;*/
+    }
+    .footer .top{
+        width: 100%;
+        height: 89px;
+        float: left;
+    }
+    .footer .top .wai a{
+        font-size: 18px;
+        color: #333;
+        line-height: 89px;
+        margin-left: 7px;
+        text-decoration: none;
+    }
+    .footer .top .wai{
+        float: left;
+        margin-left: 100px;
+    }
+    .footer .top .wai:nth-child(2){
+        margin-left: 180px;
+    }
+    .footer .top .wai:nth-child(3){
+        margin-left: 180px;
+    }
+    .footer .top .wai:nth-child(4){
+        margin-left: 180px;
+    }
+    .footer .top .wai .box{
+        width: 28px;
+        height: 28px;
+        background: #fff;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        float: left;
+        background-image: url("img/sprite.png");
+    }
+    .footer .top .wai .box1{
+        background-position: 4px -43px;
+    }
+    .footer .top .wai .box2{
+        background-position: -31px -43px;
+    }
+    .footer .top .wai .box3{
+        background-position: -31px -6px;
+    }
+
+    .footer .top .wai .box4{
+        background-position: 3px -6px;
+    }
+    .footer .bottom{
+        width: 100%;
+        height: 260px;
+        margin: 0 auto;
+    }
+    .footer .bottom .left dl{
+        width: 188px;
+        height: 167px;
+        float: left;
+        margin-top: 70px;
+    }
+    .footer .bottom .left dl dt{
+        font-size: 12px;
+        line-height: 18px;
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    .footer .bottom .left dl dd{
+        font-size: 12px;
+        color: #333;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+
+
+    .footer .bottom .right{
+        width: 240px;
+        height: 90px;
+        float: right;
+        text-align: center;
+        margin-top: 70px;
+    }
+    .footer .bottom .right .box1{
+        height: 27px;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #008ddc;
+        text-align: right;
+        /* margin: 0 0 6px; */
+    }
+    .footer .bottom .right .box2{
+        /* height: 50px; */
+        line-height: 1;
+        padding-top: 20px;
+        padding-bottom: 6px;
+        font-size: 24px;
+        color: #616161;
+        text-align: right;
+    }
+    .footer .bottom .right .box3{
+        font-size: 16px;
+        color: #aaaaaa;
+        text-align: right;
+    }
+    .footer hr{
+        height: 1px;
+        margin-top: 90px;
+        /* border: none; */
+        border-top: 1px solid #DEDEDE;
+    }
+    .back{
+        width: 50px;
+        height: 200px;
+        /* background: red; */
+        position: fixed;
+        right: 0;
+        bottom: 100px;
+    }
+    .back .box{
+        width: 100%;
+        height: 50px;
+        background: #fff;
+    }
+    .footer .dibu{
+        width: 100%;
+        height: 82px;
+        /* background-color: blue; */
+    }
+    .footer .dibu span{
+        font-size: 12px;
+        line-height: 82px;
+    }
+    .footer .dibu span{
+        font-size: 12px;
+        line-height: 82px;
+    }
+    .footer .dibu .first-span{
+        margin-left: 292px;
+    }
+
+
+
+</style>
+<body>
+<!-- 顶部导航部分开始 -->
+<div class="top-nav">
+    <div class="container">
+        <div class="left">
+            <img src="img/014.png" alt="">
+        </div>
+        <div class="middle">
+            <a href="">NEX系列</a>
+            <a href="">X系列</a>
+            <a href="">Y系列</a>
+            <a href="">商城</a>
+            <a href="">专卖店</a>
+            <a href="">Funtonch OS</a>
+            <a href="">服务</a>
+            <a href="">社区</a>
+        </div>
+        <div class="right">
+            <img src="img/015.png" alt="" class="pic5">
+        </div>
+    </div>
+    <!-- 顶部导航部分结束 -->
+</div>
+<!-- banner开始 -->
+<div class="banner">
+
+    <div class="list">
+        <div class="list-box">
+            <a href="">手机 <i>&gt;</i></a>
+            <div class="son">
+                <div class="son-title">
+                    <p>手机</p>
+                    <p style="font-size: 12px;">全部手机<i>></i></p>
+                </div>
+                <div class="son-ul" style="display: flex">
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/92.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/93.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/94.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/95.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/96.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/97.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/98.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/99.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/100.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/99.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/98.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/97.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/96.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/95.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/94.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="list-box">
+            <a href="">充电 <i>&gt;</i></a>
+            <div class="son">
+                <div class="son-title">
+                    <p>充电</p>
+                    <p style="font-size: 12px;">全部充电<i>></i></p>
+                </div>
+                <div class="son-ul" style="display: flex">
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/b.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/c.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/d.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/e.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/f.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/g.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/h.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/i.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/j.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/k.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/b.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/c.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="list-box">
+            <a href="">配件 <i>&gt;</i></a>
+            <div class="son">
+                <div class="son-title">
+                    <p>配件</p>
+                    <p style="font-size: 12px;">全部配件<i>></i></p>
+                </div>
+                <div class="son-ul" style="display: flex">
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/92.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/93.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/94.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/95.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/96.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/97.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/98.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/99.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/100.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/99.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/98.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/97.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/96.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/95.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/94.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="list-box">
+            <a href="">音乐 <i>&gt;</i></a>
+            <div class="son">
+                <div class="son-title">
+                    <p>音乐</p>
+                    <p style="font-size: 12px;">全部音乐<i>></i></p>
+                </div>
+                <div class="son-ul" style="display: flex">
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/b.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/c.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/d.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/e.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/f.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/g.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/h.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/i.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/j.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/k.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/b.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/c.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="list-box">
+            <a href="">智能 <i>&gt;</i></a>
+            <div class="son">
+                <div class="son-title">
+                    <p>智能</p>
+                    <p style="font-size: 12px;">全部智能<i>></i></p>
+                </div>
+                <div class="son-ul" style="display: flex">
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/92.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/93.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/94.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/95.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/96.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/97.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/98.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/99.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/100.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/99.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/98.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/97.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/96.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/95.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/94.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="list-box">
+            <a href="">摄影 <i>&gt;</i></a>
+            <div class="son">
+                <div class="son-title">
+                    <p>摄影</p>
+                    <p style="font-size: 12px;">全部摄影<i>></i></p>
+                </div>
+                <div class="son-ul" style="display: flex">
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/b.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/c.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/d.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/e.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/f.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/g.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/h.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/i.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/j.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/k.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/a.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/b.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/c.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="list-box">
+            <a href="">生活 <i>&gt;</i></a>
+            <div class="son">
+                <div class="son-title">
+                    <p>生活</p>
+                    <p style="font-size: 12px;">全部生活<i>></i></p>
+                </div>
+                <div class="son-ul" style="display: flex">
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/92.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/93.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/94.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/95.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/96.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/97.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/98.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/99.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/100.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/99.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="son-li">
+                            <img src="img/98.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/97.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/96.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/95.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                        <li class="son-li">
+                            <img src="img/94.png" alt="" width="50" height="50">
+                            <p>X23全面屏 8G+28G</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper" >
+            <div class="swiper-slide"><img src="img/020.jpg" alt="" style="margin-left: -500px;"></div>
+            <div class="swiper-slide"><img src="img/021.jpg" alt="" style="margin-left: -500px;"></div>
+            <div class="swiper-slide"><img src="img/022.jpg" alt="" style="margin-left: -500px;"></div>
+            <div class="swiper-slide"><img src="img/023.jpg" alt="" style="margin-left: -500px;"></div>
+            <div class="swiper-slide"><img src="img/024.jpg" alt="" style="margin-left: -500px;"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+    <!-- banner结束 -->
+</div>
+<!-- 广告部分开始 -->
+<div class="pic">
+    <div class="container">
+        <div class="pic1 pic4">
+            <img src="img/010.jpg" alt="">
+        </div>
+        <div class="pic1 pic4">
+            <img src="img/011.jpg" alt="">
+        </div>
+        <div class="pic1 pic5">
+            <img src="img/012.jpg" alt="">
+        </div>
+        <div class="pic1">
+            <img src="img/013.jpg" alt="">
+        </div>
+    </div>
+    <!-- 广告部分结束 -->
+</div>
+<!-- 热卖专区 -->
+<div class="hot">
+    <div class="container">
+        <div class="top">
+            <div class="title">热卖专区</div>
+            <div class="more" style="font-size: 14px;">
+                <a href="">更多&gt;</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="list">
+                <img src="img/01.png" alt="">
+                <div class="yin">
+                    <div class="xuan">
+                        <div class="red"></div>
+                        <div class="purple"></div>
+                        <div class="black"></div>
+                    </div>
+                    <p style="font-size: 14px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di">
+                        <div class="lookxq">查看详情</div>
+                        <div class="jrcart">加入购物车</div>
+                    </div>
+                </div>
+                <h3>6GB+64GB</h3>
+                <p>特别版</p>
+                <div class="money">￥1000</div>
+            </div>
+            <div class="list">
+                <img src="img/02.png" alt="">
+                <div class="yin">
+                    <div class="xuan">
+                        <div class="red"></div>
+                        <div class="purple"></div>
+                        <div class="black"></div>
+                    </div>
+                    <p style="font-size: 14px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di">
+                        <div class="lookxq">查看详情</div>
+                        <div class="jrcart">加入购物车</div>
+                    </div>
+                </div>
+                <h3>6GB+64GB</h3>
+                <p>特别版</p>
+                <div class="money">￥1000</div>
+            </div>
+            <div class="list last">
+                <img src="img/03.png" alt="">
+                <div class="yin">
+                    <div class="xuan">
+                        <div class="red"></div>
+                        <div class="purple"></div>
+                        <div class="black"></div>
+                    </div>
+                    <p style="font-size: 14px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di">
+                        <div class="lookxq">查看详情</div>
+                        <div class="jrcart">加入购物车</div>
+                    </div>
+                </div>
+                <h3>6GB+64GB</h3>
+                <p>特别版</p>
+                <div class="money">￥1000</div>
+            </div>
+        </div>
+    </div>
+    <!-- 热卖专区结束 -->
+</div>
+<!-- 精品手机开始 -->
+<div class="phone">
+    <div class="container">
+        <div class="top">
+            <div class="title">精品手机</div>
+            <div class="more" style="font-size: 14px;">
+                <a href="">更多&gt;</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="list">
+                <img src="img/001.jpg" alt="" class="pic1">
+
+            </div>
+            <div class="list">
+                <img src="img/003.png" alt="" class="pic2">
+                <div class="yins">
+                    <div class="xuans">
+                        <div class="reds"></div>
+                        <div class="purples"></div>
+                        <div class="blacks"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-dis">
+                        <div class="lookxqs">查看详情</div>
+                        <div class="jrcarts">加入购物车</div>
+                    </div>
+                </div>
+
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/004.png" alt="" class="pic2">
+                <div class="yins">
+                    <div class="xuans">
+                        <div class="reds"></div>
+                        <div class="purples"></div>
+                        <div class="blacks"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-dis">
+                        <div class="lookxqs">查看详情</div>
+                        <div class="jrcarts">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/005.png" alt="" class="pic2">
+                <div class="yins">
+                    <div class="xuans">
+                        <div class="reds"></div>
+                        <div class="purples"></div>
+                        <div class="blacks"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-dis">
+                        <div class="lookxqs">查看详情</div>
+                        <div class="jrcarts">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/006.png" alt="" class="pic2">
+                <div class="yins">
+                    <div class="xuans">
+                        <div class="reds"></div>
+                        <div class="purples"></div>
+                        <div class="blacks"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-dis">
+                        <div class="lookxqs">查看详情</div>
+                        <div class="jrcarts">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/007.png" alt="" class="pic2">
+                <div class="yins">
+                    <div class="xuans">
+                        <div class="reds"></div>
+                        <div class="purples"></div>
+                        <div class="blacks"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-dis">
+                        <div class="lookxqs">查看详情</div>
+                        <div class="jrcarts">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/007.png" alt="" class="pic2">
+                <div class="yins">
+                    <div class="xuans">
+                        <div class="reds"></div>
+                        <div class="purples"></div>
+                        <div class="blacks"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-dis">
+                        <div class="lookxqs">查看详情</div>
+                        <div class="jrcarts">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+        </div>
+    </div>
+    <!-- 精品手机结束 -->
+</div>
+<!-- 精品配件部分开始 -->
+<div class="goods">
+    <div class="container">
+        <div class="top">
+            <div class="title">精品配件</div>
+            <div class="more" style="width: 200px;display: flex;justify-content: space-between;">
+                <a href="" class="r_list ch">充电</a>
+                <a href="" class="r_list">配件</a>
+                <a href="" class="r_list">音乐</a>
+                <a href="" class="r_list">更多&gt;</a>
+            </div>
+        </div>
+        <div class="bottom" style="z-index: 20;">
+            <div class="list">
+                <img src="img/i.png" alt="" class="pic1 pic2 pic3">
+                <div class="yin1">
+                    <div class="xuan1">
+                        <div class="red1"></div>
+                        <div class="purple1"></div>
+                        <div class="black1"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di1">
+                        <div class="lookxq1">查看详情</div>
+                        <div class="jrcart1">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/j.png" alt="" class="pic1 pic2 pic3">
+                <div class="yin1">
+                    <div class="xuan1">
+                        <div class="red1"></div>
+                        <div class="purple1"></div>
+                        <div class="black1"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di1">
+                        <div class="lookxq1">查看详情</div>
+                        <div class="jrcart1">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/k.png" alt="" class="pic1 pic2 pic3">
+                <div class="yin1">
+                    <div class="xuan1">
+                        <div class="red1"></div>
+                        <div class="purple1"></div>
+                        <div class="black1"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di1">
+                        <div class="lookxq1">查看详情</div>
+                        <div class="jrcart1">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/100.png" alt="" class="pic1 pic2">
+                <div class="yin1">
+                    <div class="xuan1">
+                        <div class="red1"></div>
+                        <div class="purple1"></div>
+                        <div class="black1"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di1">
+                        <div class="lookxq1">查看详情</div>
+                        <div class="jrcart1">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/g.png" alt="" class="pic1 pic3">
+                <div class="yin1">
+                    <div class="xuan1">
+                        <div class="red1"></div>
+                        <div class="purple1"></div>
+                        <div class="black1"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di1">
+                        <div class="lookxq1">查看详情</div>
+                        <div class="jrcart1">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/a.png" alt="" class="pic1 pic3">
+                <div class="yin1">
+                    <div class="xuan1">
+                        <div class="red1"></div>
+                        <div class="purple1"></div>
+                        <div class="black1"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di1">
+                        <div class="lookxq1">查看详情</div>
+                        <div class="jrcart1">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/e.png" alt="" class="pic1 pic3">
+                <div class="yin1">
+                    <div class="xuan1">
+                        <div class="red1"></div>
+                        <div class="purple1"></div>
+                        <div class="black1"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di1">
+                        <div class="lookxq1">查看详情</div>
+                        <div class="jrcart1">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+            <div class="list">
+                <img src="img/016.png" alt="" class="pic1">
+                <div class="yin1">
+                    <div class="xuan1">
+                        <div class="red1"></div>
+                        <div class="purple1"></div>
+                        <div class="black1"></div>
+                    </div>
+                    <p style="font-size: 12px">已选 X23 全面屏 魅影紫<span style="color: red">￥2500</span></p>
+                    <div class="yin-di1">
+                        <div class="lookxq1">查看详情</div>
+                        <div class="jrcart1">加入购物车</div>
+                    </div>
+                </div>
+                <h4>6G+64G</h4>
+                <p>特别版</p>
+                <div class="text">$1000</div>
+            </div>
+        </div>
+    </div>
+    <!-- 精品配件部分结束 -->
+</div>
+<!-- 标签部分开始 -->
+<!-- 底部开始 -->
+<div class="footer">
+    <div class="container">
+        <div class="top">
+            <div class="wai">
+                <div class="box box1"></div>
+                <a href="">官方正品</a>
+            </div>
+            <div class="wai">
+                <div class="box box2"></div>
+                <a href="">满68包邮</a>
+            </div>
+            <div class="wai">
+                <div class="box box3"></div>
+                <a href="">30天退换货</a>
+            </div>
+            <div class="wai">
+                <div class="box box4"></div>
+                <a href="">全国网点售后</a>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom">
+            <div class="left">
+                <dl>
+                    <dt>热门</dt>
+                    <dd>Z1</dd>
+                    <dd>Z1i</dd>
+                    <dd>Xplay系列</dd>
+                    <dd>vivo摄影</dd>
+                    <dd>查找手机</dd>
+                    <dd>常见问题</dd>
+                </dl>
+                <dl>
+                    <dt>在线购买</dt>
+                    <dd>官方商城</dd>
+                    <dd>选购手机</dd>
+                    <dd>选购配件</dd>
+                    <dd>选购碎屏保</dd>
+                    <dd>以旧换新</dd>
+                    <dd>服务保障</dd>
+                </dl>
+                <dl>
+                    <dt>服务支付</dt>
+                    <dd>服务首页</dd>
+                    <dd>服务网点查询</dd>
+                    <dd>真伪查询</dd>
+                    <dd>服务政策</dd>
+                    <dd>预约维修</dd>
+                    <dd>维修配件价格</dd>
+                </dl>
+                <dl>
+                    <dt>vivo社区</dt>
+                    <dd>社区首页</dd>
+                    <dd>摄影专区</dd>
+                    <dd>微博</dd>
+                    <dd>贴吧</dd>
+                    <dd>兴趣部落</dd>
+                </dl>
+                <dl>
+                    <dt>关于vivo</dt>
+                    <dd>vivo简介</dd>
+                    <dd>工作机会</dd>
+                    <dd>新闻资讯</dd>
+                    <dd>采购平台</dd>
+                    <dd>开发者平台</dd>
+                </dl>
+            </div>
+            <div class="right">
+
+                <div class="box1" style="height: 28px;display: flex;margin-left: 98px;">
+                    <img src="img/online-service_8319a93.png" alt="" style="width: 35px;height: 30px;margin-right: 10px;margin-top: 5px;">
+                    <p>在线客服</p>
+                </div>
+                <div class="box2">400-678-9688</div>
+                <div class="box3">24小时全国服务热线</div>
+            </div>
+        </div>
+        <hr>
+        <div class="dibu" style="position: relative;">
+            <span>Copyright 2011-2018广东步步高电子工业有限公司版权所有&nbsp;&nbsp;保留一切权利|隐私政策|法律声明|粤B2-20080267|粤ICP备05100288号</span>
+            <img src="img/gssw-icon-x2_db0a7f6.png"  style="width: 18px;height: 18px;" alt="">
+            <span class="first-span">关注vivo</span>
+            <span style="margin-left: 30px;">|</span>
+            <img src="img/地球.png" alt="" style="position:absolute;top:14px;width: 16px;height: 16px;margin-left: 30px;margin-top: 20px;">
+            <span class="seconed-span" style="margin-left: 50px;">中国</span>
+        </div>
+    </div>
+</div>
+<!-- 底部结束 -->
+<style>
+    .back{
+        width: 50px;
+        height: 200px;
+        /* background: red; */
+        position: fixed;
+        right: 0;
+        bottom: 100px;
+        z-index: 999;
+    }
+    .back .box{
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        text-align: center;
+
+    }
+    .back .box:hover{
+        color:#ff6700;
+        background: #eee;
+    }
+    .back .box i{
+        font-size: 30px;
+        line-height: 50px;
+
+    }
+
+</style>
+<!-- 返回顶部开始 -->
+<div class="back">
+    <div class="box"><i class="iconfont icon-gouwuche" style="color: rgba(0,0,0,0.6)"></i></div>
+    <div class="box"><i class="iconfont icon-htmal5icon31" style="color: rgba(0,0,0,0.6)"></i></div>
+    <div class="box"><i class="iconfont icon-bangzhu" style="font-size: 26px;color: rgba(0,0,0,0.6)"></i></div>
+    <div class="box aalis" style="display: none"><i class="iconfont icon-fanhuidingbu" style="font-size: 32px;color: rgba(0,0,0,0.6)"></i></div>
+</div>
+<!-- 返回顶部结束 -->
+
+
+
+
+
+
+
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        effect : 'fade',
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay:true,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,//1秒切换一次
+        },
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+
+</body>
+</html>
